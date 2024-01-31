@@ -1,5 +1,17 @@
 body {
     font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
 }
 
 h2,
@@ -15,14 +27,36 @@ footer {
     font-weight: bold;
 }
 
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
 nav a {
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
+    color: white;
 }
 
 nav a:hover {
     font-weight: bold;
+}
+
+header {
+    display: inline;
 }
 
 .profile header {
@@ -38,4 +72,58 @@ nav a:hover {
 
 .profile img {
     width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
 }
