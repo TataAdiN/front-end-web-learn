@@ -16,19 +16,19 @@ main {
 
 h2,
 h3 {
-    color: #00a2c6;
+    color: #7fb630;
 }
 
 footer {
     padding: 20px;
     color: white;
-    background-color: #00a2c6;
+    background-color: #597c23;
     text-align: center;
     font-weight: bold;
 }
 
 nav {
-    background-color: #00a2c6;
+    background-color: #597c23;
     padding: 5px;
     position: sticky;
     top: 0;
@@ -83,7 +83,7 @@ header {
 .jumbotron {
     font-size: 20px;
     padding: 60px;
-    background-color: #00c8eb;
+    background-color: #659127;
     text-align: center;
     color: white;
 }
