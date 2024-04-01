@@ -23,7 +23,6 @@ footer {
     padding: 20px;
     color: white;
     background-color: #597c23;
-    text-align: center;
     font-weight: bold;
 }
 
@@ -93,6 +92,43 @@ header {
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem 2rem;
+}
+
+.social-media {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin: auto;
+    background-color: #659127;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-media li {
+    list-style-type: none;
+}
+
+.social-media li a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all 0.1s ease-in-out;
+}
+
+.social-media li a:hover {
+    color: #89b0d9;
 }
 
 aside {
