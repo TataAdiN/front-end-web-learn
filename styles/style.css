@@ -131,6 +131,48 @@ header {
     color: #89b0d9;
 }
 
+.step_list ol {
+    list-style: none;
+    counter-reset: step-counter;
+    padding-left: 0;
+}
+
+.step_list ol li {
+    counter-increment: step-counter;
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.step_list ol li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: -5px;
+    background: #7fb630;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    border: 2px solid #000000;
+}
+
+.step_list ol li::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    width: 4px;
+    height: 100%;
+    background: #659127;
+}
+
+.step_list ol li:last-child::after {
+    display: none;
+}
+
 aside {
     flex: 1;
 }
