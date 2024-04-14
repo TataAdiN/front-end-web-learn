@@ -94,7 +94,7 @@ header {
     gap: 1rem 2rem;
 }
 
-.social-media {
+.school-level {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -102,7 +102,7 @@ header {
     justify-content: center;
 }
 
-.social-media ul {
+.school-level ul {
     padding: 1.5rem 1rem;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -115,11 +115,11 @@ header {
     gap: 1.5rem;
 }
 
-.social-media li {
+.school-level li {
     list-style-type: none;
 }
 
-.social-media li a {
+.school-level li a {
     font-weight: bold;
     text-decoration: none;
     font-size: 1.5rem;
@@ -127,7 +127,7 @@ header {
     transition: all 0.1s ease-in-out;
 }
 
-.social-media li a:hover {
+.school-level li a:hover {
     color: #89b0d9;
 }
 
